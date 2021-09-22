@@ -31,7 +31,7 @@ int bfs(int source,int dest,vector<int>&parent,vector<vector<int>>&residualgraph
 int ford_fulkerson(vector<vector<int>>&graph,int source,int dest)
 {
     vector<int>parent(V,-1);
-   vector<vector<int>>residualgraph=graph;
+    vector<vector<int>>residualgraph=graph;
     int min_cap=0,max_flow=0;
     while(min_cap=bfs(source,dest,parent,residualgraph))
     {
